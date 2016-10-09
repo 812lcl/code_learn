@@ -1,0 +1,38 @@
+[Python]
+https://github.com/kennethreitz/pip-pop.git
+https://github.com/kennethreitz/envoy.git           # Python Subprocesses for Humans
+https://github.com/kennethreitz/records.git
+https://github.com/mitsuhiko/pluginbase.git
+https://github.com/mitsuhiko/pipsi.git
+https://github.com/mitsuhiko/unp.git
+https://github.com/chrisallenlane/cheat.git
+https://github.com/jek/blinker.git
+https://github.com/mitsuhiko/platter.git
+https://github.com/kennethreitz/tablib.git
+
+https://github.com/faif/python-patterns.git         # 使用Python实现一些设计模式的例子
+https://github.com/pallets/werkzeug.git             # flask的WSGI工具集。其中包含了实现非常好的LocalProxy、cached_property、import_string、find_modules、TypeConversionDict等
+https://github.com/bottlepy/bottle.git              # 阅读一个Web框架对Web开发就会有更深刻的理解，flask太大，bottle就4k多行，当然如果你有毅力和兴趣直接看flask是最好了的
+https://github.com/msiemens/tinydb.git              # 了解用Python实现数据库
+https://github.com/coleifer/peewee.git              # 了解ORM的实现
+https://github.com/pallets/click.git                # click已经内置于在flask 0.11里，提供命令行功能，值得阅读
+https://github.com/mitsuhiko/flask-sqlalchemy.git   # 了解一个flask插件是怎么实现的
+https://github.com/Runscope/httpbin.git             # 使用flask
+https://github.com/Jahaja/psdash.git                # 使用flask和psutils的获取Linux系统信息的面板应用
+https://github.com/pallets/flask-website.git        # flask官方网站应用
+https://github.com/pypa/warehouse.git               # 如果你使用pyramid，这个新版的PYPI网站，可以帮助你理解很多
+
+https://github.com/aosabook/500lines.git            # 它里面包含了22个由该领域的专家完成，用不到500行的代码实现一个特定功能的子项目
+https://github.com/kennethreitz/requests.git        #
+https://github.com/jkbrzt/httpie.git                #
+https://github.com/tornadoweb/tornado.git           #
+https://github.com/pallets/flask.git                #
+https://github.com/django/django.git                #
+
+[C++]
+https://github.com/miloyip/rapidjson.git
+https://github.com/google/leveldb.git
+https://github.com/python/cpython.git
+
+[Shell]
+https://github.com/afaqurk/linux-dash.git
