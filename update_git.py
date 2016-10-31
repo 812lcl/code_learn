@@ -5,7 +5,7 @@
 @brief   : update code
 @author  : liuchunlei <liuchunlei@baidu.com>
 @date    : 2016-09-27 13:42:39
-@update  : 2016-10-09 21:35:30
+@update  : 2016-10-29 14:23:18
 @version : 1.0.0.0
 """
 
@@ -15,7 +15,7 @@ import commands
 
 git_root = '/home/users/liuchunlei/code'
 
-fp = open('log', 'a')
+fp = open('log', 'w')
 with open('code_list', 'r') as f:
     fp.write("---- Source code learning ----\n")
     fp.write("\n")
