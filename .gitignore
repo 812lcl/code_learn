@@ -36,10 +36,10 @@ werkzeug
 platform
 flasky
 jstraining
-icub3d
-astaxie
-skynetservices
-coreos
-nsqio
-urfave
-golang
+home
+beego
+skynet
+etcd
+nsq
+negroni
+groupcache
