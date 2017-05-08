@@ -5,7 +5,7 @@
 @brief   : update code
 @author  : liuchunlei <liuchunlei@baidu.com>
 @date    : 2016-09-27 13:42:39
-@update  : 2016-10-29 14:23:18
+@update  : 2017-05-08 17:06:55
 @version : 1.0.0.0
 """
 
@@ -48,18 +48,8 @@ with open('code_list', 'r') as f:
                 ret = commands.getstatusoutput(cmd)
                 fp.write(ret[1]+"\n")
 
-        cmd1 = "find %s -name \"*.py\" | wc -l" % dir_abspath
-        fp.write("Python files: %s" % commands.getstatusoutput(cmd1)[1]+"\n")
-        cmd2 = "find %s -name \"*.py\" | xargs wc -l | tail -1 | awk '{print $1}'" % dir_abspath
-        fp.write("Python lines: %s" % commands.getstatusoutput(cmd2)[1]+"\n")
-        cmd3 = "find %s -name \"*.c\" -o -name \"*.cpp\" -o -name \"*.h\" | wc -l" % dir_abspath
-        fp.write("C files: %s" % commands.getstatusoutput(cmd3)[1]+"\n")
-        cmd4 = "find %s -name \"*.c\" -o -name \"*.cpp\" -o -name \"*.h\" | xargs wc -l | tail -1 | awk '{print $1}'" % dir_abspath
-        fp.write("C lines: %s" % commands.getstatusoutput(cmd4)[1]+"\n")
-        cmd5 = "find %s -name \"*.c\" -o -name \"*.sh\"| wc -l" % dir_abspath
-        fp.write("Shell files: %s" % commands.getstatusoutput(cmd5)[1]+"\n")
-        cmd6 = "find %s -name \"*.c\" -o -name \"*.sh\"| xargs wc -l | tail -1 | awk '{print $1}'" % dir_abspath
-        fp.write("Shell lines: %s" % commands.getstatusoutput(cmd6)[1]+"\n")
+        cmd = "cloc %s" % dir_abspath
+        fp.write(commands.getstatusoutput(cmd)[1])
         fp.write("\n")
 
 fp.write("---- Source code learning ----\n")
