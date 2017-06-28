@@ -43,3 +43,4 @@ etcd
 nsq
 negroni
 groupcache
+seaweedfs
