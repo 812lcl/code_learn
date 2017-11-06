@@ -49,3 +49,6 @@ https://github.com/chrislusf/seaweedfs.git
 https://github.com/icub3d/home.git
 https://github.com/coreos/etcd.git
 https://github.com/urfave/negroni.git
+https://github.com/gorilla/mux
+https://github.com/gin-gonic/gin
+https://github.com/appleboy/gorush
