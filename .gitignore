@@ -43,3 +43,7 @@ etcd
 nsq
 negroni
 groupcache
+seaweedfs
+gin
+gorush
+mux
