@@ -29,6 +29,9 @@ https://github.com/tornadoweb/tornado.git           #
 https://github.com/pallets/flask.git                #
 https://github.com/django/django.git                #
 
+[C]
+https://github.com/antirez/redis.git
+
 [C++]
 https://github.com/miloyip/rapidjson.git
 https://github.com/google/leveldb.git
