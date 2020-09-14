@@ -10,7 +10,7 @@
 """
 
 import os
-import commands
+import subprocess
 
 
 git_root = '/home/users/liuchunlei/code'
@@ -31,25 +31,25 @@ with open('code_list', 'r') as f:
         dir_abspath = os.path.abspath(dir_name)
         if os.path.exists(dir_abspath):
             cmd = 'cd %s && git pull && cd - > /dev/null' % dir_abspath
-            ret = commands.getstatusoutput(cmd)
+            ret = subprocess.getstatusoutput(cmd)
             if ret[0] == 0:
                 fp.write(ret[1]+"\n")
             else:
                 fp.write('failed, retry...\n')
-                ret = commands.getstatusoutput(cmd)
+                ret = subprocess.getstatusoutput(cmd)
                 fp.write(ret[1]+"\n")
         else:
             cmd = 'git clone %s' % remote_path
-            ret = commands.getstatusoutput(cmd)
+            ret = subprocess.getstatusoutput(cmd)
             if ret[0] == 0:
                 fp.write(ret[1]+"\n")
             else:
                 fp.write('failed, retry...\n')
-                ret = commands.getstatusoutput(cmd)
+                ret = subprocess.getstatusoutput(cmd)
                 fp.write(ret[1]+"\n")
 
         cmd = "cloc %s" % dir_abspath
-        fp.write(commands.getstatusoutput(cmd)[1])
+        fp.write(subprocess.getstatusoutput(cmd)[1])
         fp.write("\n")
 
 fp.write("---- Source code learning ----\n")
